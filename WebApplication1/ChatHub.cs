@@ -5,10 +5,15 @@ namespace WebApplication1
 {
     public class ChatHub : Hub
     {
-        public void Send(string name, string message)
+        //public void Send(string name, string message)
+        //{
+            
+        //    // Call the broadcastMessage method to update clients.
+        //    Clients.All.broadcastMessage(name, message);
+        //}
+        public void Announce(string message)
         {
-            // Call the broadcastMessage method to update clients.
-            Clients.All.broadcastMessage(name, message);
+            Clients.All.Announce(message);
         }
     }
 }

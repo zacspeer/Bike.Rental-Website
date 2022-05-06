@@ -28,9 +28,9 @@
     <script src="signalr/hubs"></script>
     <!--Add script to update the page and send messages.-->
     <script type="text/javascript">
-        $(function () {
+        $(function () {.
             // Declare a proxy to reference the hub.
-            var chat = $.connection.chatHub;
+            var chat = $.connection.ChatHub;
             // Create a function that the hub can call to broadcast messages.
             chat.client.broadcastMessage = function (name, message) {
                 // Html encode display name and message.
